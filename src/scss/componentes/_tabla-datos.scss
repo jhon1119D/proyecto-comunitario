@@ -1,0 +1,136 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+@use "sass:color";
+
+.borde {
+  overflow-x: auto;
+  display: block;
+  text-align: center;
+  border-collapse: collapse;
+
+
+  @include m.tablet {
+    display: table;
+    width: 100%;
+    table-layout: auto;
+  }
+}
+
+
+.encabezado-datos {
+  background-color: v.$indigo;
+  color: v.$blanco;
+  font-size: 1.1rem;
+  border-bottom: solid 1.4px v.$negro;
+}
+.informacion-datos {
+  font-size: 1.1rem;
+  background-color: v.$gris;
+  a {
+    color: v.$blanco;
+  }
+
+  td {
+    padding: 1rem;
+    color: v.$negro;
+    font-weight: 100;
+  }
+
+  tr:nth-child(even) {
+    background-color: v.$blanco;
+  }
+
+  &.informacion-datos tr:hover {
+    background-color: v.$naranja;
+  }
+}
+
+.editar {
+  color: v.$verde;
+  transition: transform 0.3s ease;
+  /* Añade una transición suave */
+  &:hover {
+    transform: scale(1.3);
+    /* Agranda el elemento al pasar el ratón */
+  }
+}
+.eliminar {
+  color: v.$rojo;
+  transition: transform 0.3s ease;
+  /* Añade una transición suave */
+  &:hover {
+    transform: scale(1.3);
+    /* Agranda el elemento al pasar el ratón */
+  }
+}
+.visualizar {
+  color: v.$grisOscuro;
+  transition: transform 0.3s ease;
+  /* Añade una transición suave */
+  &:hover {
+    transform: scale(1.3);
+    /* Agranda el elemento al pasar el ratón */
+  }
+}
+
+.enlace {
+  color: v.$morado;
+  transition: transform 0.3s ease;
+  /* Añade una transición suave */
+  &:hover {
+    transform: scale(1.3);
+    /* Agranda el elemento al pasar el ratón */
+  }
+}
+.descargar {
+  color: v.$indigo;
+  transition: transform 0.3s ease;
+  /* Añade una transición suave */
+  &:hover {
+    transform: scale(1.3);
+    /* Agranda el elemento al pasar el ratón */
+  }
+}
+.descargar-zip {
+  color: v.$rojizo;
+  transition: transform 0.3s ease;
+  /* Añade una transición suave */
+  &:hover {
+    transform: scale(1.3);
+    /* Agranda el elemento al pasar el ratón */
+  }
+}
+.alinear-contenido {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Ajusta el espacio entre el checkbox y el nombre según tus necesidades */
+}
+.openSource {
+  display: flex;
+  justify-content: space-between;
+}
+
+//Marco de advertencias
+.advertencia{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 8);
+  background-color: #fff;
+  border-radius: 5px;
+  p{
+    font-size: 1.3rem;
+  }
+}
+
+
+//Mensaje de bienvenida del usuario
+.mensaje {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-right: 0;
+  margin-left: auto; /* Alinea el contenedor a la derecha */
+  box-shadow: 0 2px 4px #000;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 26rem;
+}
+
+

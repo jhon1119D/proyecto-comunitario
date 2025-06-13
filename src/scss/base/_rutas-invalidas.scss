@@ -1,0 +1,15 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "sass:color";
+
+//estilos para rutas invalidas
+.contenedor-sm {
+    .ruta-invalida {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .boton-ruta {
+        @include m.boton(v.$indigo, v.$blanco);
+      }
+  }

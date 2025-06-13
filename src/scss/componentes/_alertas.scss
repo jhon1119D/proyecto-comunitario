@@ -1,0 +1,30 @@
+@use "base/variables" as v;
+
+.alerta {
+  padding: calc(v.$separacion / 4);
+  color: v.$blanco;
+  width: 100%;
+  display: block;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 3s ease-out;
+  
+
+  &.error {
+    background-color: v.$rojo;
+    border-left: v.$gris solid .5rem;
+
+  }
+
+  &.exito {
+    background-color: v.$verde;
+    border-left: v.$gris solid .5rem;
+
+  }
+  &.buscar{
+    background-color: v.$naranja;
+    border-left: v.$gris solid .5rem;
+  }
+}

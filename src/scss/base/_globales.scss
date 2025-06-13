@@ -1,0 +1,63 @@
+@use "variables" as v;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body.dark-mode {
+  background: v.$negro;
+  color: v.$blanco;
+}
+
+body {
+  background: url("/build/img/fondo-utpl.svg");
+  background-repeat: no-repeat;
+  background-size: 46rem;
+  background-position: unset;
+  font-family: v.$fuente_textos;
+  font-size: 1.6rem;
+  min-height: 100%;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 120rem; //antes era max-width 1200px
+  margin: 0 auto;
+}
+.contenedor-sm {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+.footer-content {
+  font-size: 11px;
+  font-weight: 100;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 5px grey;
+}
+.return {
+  color:v.$naranja;
+  transition: transform 1.3s ease-out;
+}
+
+.return:active {
+  transform: translateX(-2.7rem); /* Ajusta el valor según tus necesidades */
+
+}
+
+
+
+

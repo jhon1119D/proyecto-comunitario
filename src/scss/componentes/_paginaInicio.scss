@@ -1,0 +1,47 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+@use "sass:color";
+
+.contenedor-sm {
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    @include m.tablet {
+      flex-direction: row;
+      width: 50rem;
+      gap: 6rem;
+      margin-left: 20%;
+    }
+  }
+  .card {
+    width: auto;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s;
+    margin-bottom: 5rem;
+  }
+  .card:hover {
+    @include m.tablet {
+      transform: scale(1.1);
+    }
+  }
+
+  .card-content {
+    padding: 16px;
+    background: v.$gris;
+  }
+  .card-content h3 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+  }
+  .card-content a {
+    @include m.boton(v.$indigo, v.$blanco, 100%);
+  }
+}

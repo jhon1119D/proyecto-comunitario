@@ -1,0 +1,91 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+@use "sass:color";
+
+/* Estilos para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 60px;
+
+}
+.modal-content {
+  background-color: v.$grisOscuro;
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+  
+  @include m.tablet {
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}
+.actualizar {
+  color: v.$naranja;
+  margin-top: 5rem;
+
+
+  .camp {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    font-size: 1.2rem;
+
+    label {
+      flex: 0 0 11rem;
+
+    }
+
+    input,
+    select {
+      flex: 1;
+      padding: 0.5rem;
+      border: none;
+      margin-right: 1rem;
+      background: v.$gris;
+      border-radius: 10px;
+    }
+  }
+  button[type="submit"] {
+    @include m.boton(v.$naranja, v.$blanco);
+  }
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botones-utiles{
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    color:v.$rojo; // Color rojo para el texto
+  }
+}
