@@ -49,15 +49,19 @@ img {
   text-shadow: 2px 2px 5px grey;
 }
 .return {
-  color:v.$naranja;
+  color: v.$naranja;
   transition: transform 1.3s ease-out;
 }
 
 .return:active {
   transform: translateX(-2.7rem); /* Ajusta el valor según tus necesidades */
-
 }
-
-
-
-
+.imgen-hakeado {
+  width: 900px;
+  height: 600px;
+  background: url("/build/img/hack.webp") no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: block;
+  margin: 0 auto;
+}
