@@ -54,7 +54,7 @@ class Usuario extends ActiveRecord
     public function hashPassword()
     {
         // $this->contrasena = password_hash($this->contrasena, PASSWORD_BCRYPT);
-        $this->contrasena=$this->contrasena;
+        $this->contrasena = $this->contrasena;
     }
     //FUNCIÓN PARA HASHEAR UNA CONTRASEÑA
 
@@ -86,14 +86,14 @@ class Usuario extends ActiveRecord
     //FUNCIÓN PARA COMPROBAR CONTRASEÑA
     public function comprobarContraseña($contrasena)
     {
-
-        $resultado = password_verify($contrasena, $this->contrasena);
-        if (!$resultado) {
-            self::$alertas['error'][] = 'Contraseña incorrecta';
+        if ($contrasena === $this->contrasena) {
+            return true; // Contraseña válida
         } else {
-            return true;
+            self::$alertas['error'][] = 'Contraseña incorrecta';
+            return false;
         }
     }
+
     //FUNCIÓN PARA COMPROBAR CONTRASEÑA
 
     //FUNCIÓN PARA ACTUALIZAR USUARIO
@@ -183,7 +183,7 @@ class Usuario extends ActiveRecord
         } elseif (!preg_match('/^[0-9]{7,12}$/', $this->telefono)) {
             self::$alertas['error'][] = 'El teléfono que ingresó no es válido. Debe contener entre 7 y 12 dígitos.';
         }
-        
+
 
 
 

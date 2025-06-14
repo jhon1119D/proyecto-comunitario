@@ -45,3 +45,15 @@
     @include m.boton(v.$indigo, v.$blanco, 100%);
   }
 }
+
+
+  .imgen-hakeado {
+    width: 900px;
+    height: 600px;
+    background: url("/build/img/hakeado.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
