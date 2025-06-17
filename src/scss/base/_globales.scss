@@ -34,6 +34,13 @@ body {
 .contenedor-sm {
   max-width: 65rem;
   margin: 0 auto;
+
+  .imagen {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
 }
 a {
   text-decoration: none;
@@ -65,10 +72,5 @@ img {
   display: block;
   margin: 0 auto;
 }
-img{
-  .imagen {
-    height: 21rem;
-    margin: 0 auto;
-  }
-}
+
 
