@@ -24,11 +24,14 @@
     </div>
 
     <div class="contenedor-sm">
-        <div class="imagen">
-            <!-- imagen de la utpl -->
-            <img src="/build/img/logo_ec_red.png" alt="Logo utpl" class="imagen">
+        
+<div class="imagen">
+    <!-- imagen de la utpl -->
+    <img src="/build/img/logo_ec_red.png" alt="Logo utpl">
 
-        </div>
+</div>
+        
+
 
         <p class="descripcion-pagina">Iniciar Sesión</p>
         <!-- BOTON USUARIO Y DARK MODE -->

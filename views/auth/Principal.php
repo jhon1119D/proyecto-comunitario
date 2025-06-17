@@ -18,9 +18,9 @@
 
     <div class="contenedor-sm">
         <!-- <h1>Sistema de calificación academica del curso de venta directa</h1> -->
-        <div class="imagen">
+        
         <img src="build/img/logo_ec_red.png" alt="Revistas">
-        </div>
+        
         
 
         <div class="card-container">
