@@ -24,11 +24,10 @@
     </div>
 
     <div class="contenedor-sm">
-        
+
 <div class="imagen">
     <!-- imagen de la utpl -->
     <img src="/build/img/logo_ec_red.png" alt="Logo utpl">
-
 </div>
         
 
