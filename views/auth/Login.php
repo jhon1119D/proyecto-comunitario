@@ -28,7 +28,7 @@
 
     <!-- imagen de la utpl -->
 
-    <img src="/build/img/logo_ec_red.png" alt="Logo UTPL" class="imagen">
+    <img src="/build/img/logo_ec_red.png" alt="Logo UTPL">
 
         
 
