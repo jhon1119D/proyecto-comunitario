@@ -11,9 +11,7 @@
     margin-top: 5rem;
     @include m.tablet {
       flex-direction: row;
-      width: 50rem;
       gap: 6rem;
-      margin-left: 20%;
     }
   }
   .card {
@@ -44,6 +42,7 @@
   .card-content a {
     @include m.boton(v.$indigo, v.$blanco, 100%);
   }
+
 }
 
 

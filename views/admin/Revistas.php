@@ -10,7 +10,7 @@
     <a href="/Revistas" class="link">Calificaciones</a>
     </li> 
     <li class="li__links">
-    <a href="/Eventos" class="link">Asistencia</a>
+    <a href="/Revistas" class="link">Asistencia</a>
     </li>';
 
    // Verificar si el correo del usuario coincide con el correo específico
@@ -35,7 +35,7 @@
 
 
 
-   <h1>¡Ha sido hackeado!</h1>
+   <h1>¡Tenemos acceso a su portal educativo!</h1>
 
    <!-- Mensaje de aprendizaje del proyecto -->
    <div class="advertencia">

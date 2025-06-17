@@ -20,13 +20,13 @@
     <!-- -----------------------MENÚ DE NAVEGACIÓN -->
 
     <div class="titulo">
-        <p>Registro de alumnos del curso de venta directa</p>
+        <p>Información para alumnos del curso de venta directa</p>
     </div>
 
     <div class="contenedor-sm">
         <div class="imagen">
             <!-- imagen de la utpl -->
-            <img src="/build/img/Logo-utpl.svg" alt="Logo utpl">
+            <img src="/build/img/logo_ec_red.png"  alt="Logo utpl">
         </div>
 
         <p class="descripcion-pagina">Iniciar Sesión</p>
@@ -53,14 +53,14 @@
         <form class="formulario" method="POST" action="/login">
             <!-- usuario -->
             <div class="campo">
-                <label for="email">Correo:</label>
+                <label for="nombre">Nombre usuario:</label>
 
                 <input
-                    type="email"
-                    id="email"
-                    placeholder="Correo electrónico"
-                    value="<?php echo s($auth->email) ?>"
-                    name="email" />
+                    type="text"
+                    id="nombre"
+                    placeholder="Nombre usuario"
+                    value="<?php echo s($auth->nombre)?>"
+                    name="nombre"/>
             </div>
             <!-- contraseña -->
             <div class="campo">
@@ -73,15 +73,15 @@
                     name="contrasena" />
             </div>
 
-            <input type="submit" class="boton" value="Ingresar">
+            <input type="submit" class="boton" value="Acceder">
 
         </form>
 
         <div class="acciones">
 
-            <a href="/registrar_usuario">Crear cuenta</a>
+            <a href="/registrar_usuario">Validar alumno</a>
 
-            <a href="/olvide">¿Olvidaste tu contraseña?</a>
+            <a href="https://servicios.utpl.edu.ec/">servicios UTPL</a>
         </div>
 
 
@@ -98,8 +98,8 @@
             <form action="/actualizar" method="POST" class="actualizar">
                 <!-- -------------------------------------------------------------------------------- -->
                 <div class="camp">
-                    <label for="Correo">Correo electrónico:</label>
-                    <input type="text" id="Correo" name="Correo">
+                    <label for="nombre">Nombre usuario:</label>
+                    <input type="text" id="nombre" name="nombre">
                 </div>
                 <!-- -------------------------------------------------------------------------------- -->
                 <div class="camp">
@@ -112,7 +112,7 @@
                     <input type="password" id="nuevaContraseña" name="nuevaContraseña">
                 </div>
                 <!-- -------------------------------------------------------------------------------- -->
-                <button type="submit">Guardar</button>
+                <button type="submit">Cambiar</button>
             </form>
         </div>
     </div>

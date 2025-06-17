@@ -17,19 +17,21 @@
     <!-- -----------------------MENÚ DE NAVEGACIÓN -->
 
     <div class="contenedor-sm">
-        <h1>Sistema de calificación academica del curso de venta directa</h1>
+        <!-- <h1>Sistema de calificación academica del curso de venta directa</h1> -->
+        <img src="build/img/logo_ec_red.png" alt="Revistas">
+
         <div class="card-container">
             <div class="card">
                 <img src="build/img/eventos.jpg" alt="Eventos">
                 <div class="card-content">
-                    <h3> Ver registro de asistencia</h3>
+                    <h3> Registro de asistencia de los talleres</h3>
                     <a href="/login">Ver más</a>
                 </div>
             </div>
             <div class="card">
                 <img src="build/img/revistas.jpg" alt="Revistas">
                 <div class="card-content">
-                    <h3>Revisión de calificación final</h3>
+                    <h3>Revisar calificación final del curso</h3>
                     <a href="/login">Ver más</a>
                 </div>
             </div>

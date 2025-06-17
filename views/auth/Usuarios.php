@@ -24,7 +24,7 @@
         </a>
     </header>
     <!-- -----------------------MENÚ DE NAVEGACIÓN -->
-    <h1>Registro de Usuarios</h1>
+    <h1>Registro de alumnos</h1>
     <!-- ALERTAS  -->
     <?php
     include_once __DIR__ . "../../plantillas/alertas.php";
@@ -35,47 +35,20 @@
     <div class="contenedor-sm">
 
         <form class="formulario" method="POST"  action="/registrar_usuario" id="formRegistro">
-            <p class="descripcion-pagina">Formulario de registro de usuarios</p>
+            <p class="descripcion-pagina">Registro verificación de alumnos</p>
 
             <div class="campo">
-                <label for="nombre">Nombre:</label>
+                <label for="nombre">Nombre usuario:</label>
                 <input
                     type="text"
                     id="nombre"
                     name="nombre"
-                    placeholder="Nombre del usuario"
-                    value="<?php echo s($crearUsuario->nombre); ?>" />
+                    placeholder="Ejemplo:jasaavedra"
+                    value="<?php echo s($crearUsuario->nombre);?>"/>
+                   
             </div>
 
-            <div class="campo">
-                <label for="apellido">Apellidos:</label>
-                <input
-                    type="text"
-                    id="apellido"
-                    name="apellido"
-                    placeholder="Apellidos del usuario"
-                    value="<?php echo s($crearUsuario->apellido); ?>" />
-            </div>
 
-            <div class="campo">
-                <label for="telefono">Teléfono:</label>
-                <input
-                    type="tel"
-                    id="telefono"
-                    name="telefono"
-                    placeholder="Teléfono del usuario"
-                    value="<?php echo s($crearUsuario->telefono); ?>" />
-            </div>
-
-            <div class="campo">
-                <label for="email">Correo Electrónico:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Correo electrónico del usuario"
-                    value="<?php echo s($crearUsuario->email); ?>" />
-            </div>
             <!-- contraseña -->
             <div class="campo">
                 <label for="contrasena">Contraseña:</label>
@@ -83,33 +56,20 @@
                 <input
                     type="password"
                     id="contrasena"
-                    placeholder="Contraseña"
+                    placeholder="Contraseña enviada por correo"
                     name="contrasena"
                     value="<?php echo s($crearUsuario->contrasena); ?>" />
 
             </div>
 
-            <div class="campo">
-                <label for="nombre">Código:</label>
-                <input
-                    type="text"
-                    id="codigo"
-                    name="codigo"
-                    placeholder="Código para registro"
-                    value="<?php echo s($crearUsuario->codigo); ?>" />
-            </div>
-
-
-            <input type="submit" class="boton" value="Registrar usuario">
+            <input type="submit" class="boton" value="Verificar alumno">
         </form>
-
-
 
         <div class="acciones">
 
-            <a href="/">Página de inicio</a>
+            <a href="/">Página principal</a>
 
-            <a href="/login">Inicio de sesión</a>
+            <a href="/login">Iniciar sesión</a>
         </div>
     </div>
 
