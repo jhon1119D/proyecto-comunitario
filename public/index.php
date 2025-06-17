@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../includes/app.php';
 
 use Controllers\LoginController;
-use Controllers\CodigoController;
+
 use MVC\Router;
 
 
@@ -14,6 +14,9 @@ $router->get('/', [LoginController::class, 'paginaPrincipal']);
 $router->get('/login', [LoginController::class, 'login']);
 $router->post('/login', [LoginController::class, 'login']);
 // ------------------------------ LOGIN
+
+$router->post('/registrar_usuario', [LoginController::class, 'usuario']);
+$router->get('/registrar_usuario', [LoginController::class, 'usuario']);
 
 //----------------CERRAR SESIÓN-------------------------------------
 $router->get('/logout', [LoginController::class, 'logout']);

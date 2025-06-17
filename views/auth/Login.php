@@ -24,10 +24,10 @@
     </div>
 
     <div class="contenedor-sm">
-        <div class="imagen">
-            <!-- imagen de la utpl -->
-            <img src="/build/img/logo_ec_red.png"  alt="Logo utpl">
-        </div>
+
+        <!-- imagen de la utpl -->
+        <img src="/build/img/logo_ec_red.png" alt="Logo utpl" class="imagen">
+
 
         <p class="descripcion-pagina">Iniciar Sesión</p>
         <!-- BOTON USUARIO Y DARK MODE -->
@@ -59,8 +59,8 @@
                     type="text"
                     id="nombre"
                     placeholder="Nombre usuario"
-                    value="<?php echo s($auth->nombre)?>"
-                    name="nombre"/>
+                    value="<?php echo s($auth->nombre) ?>"
+                    name="nombre" />
             </div>
             <!-- contraseña -->
             <div class="campo">
