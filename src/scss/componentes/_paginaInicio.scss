@@ -12,6 +12,8 @@
     @include m.tablet {
       flex-direction: row;
       gap: 6rem;
+      justify-content: center; // <-- centra horizontalmente
+      align-items: center;     // <-- centra verticalmente si es necesario
     }
   }
   .card {
